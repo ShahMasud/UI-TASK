@@ -1,38 +1,282 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading{
+  font-size: 20px;
+  font-weight: bold;
+  /* margin-top: 20px; */
+}
+.switch_btns{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  /* padding: 10px; */
+  /* background-color: lightblue; */
+  margin-top: 10px;
+}
+.switch_btns button{
+  font-size: 16px;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  border-style: unset !important;
+  /* margin-bottom: 20px; */
+}
+.switch_btns button:hover{
+  color: #e4852c;
+  cursor: pointer;
+}
+.switch_btns .btn{
+  border-right: 1px solid black !important;
+
+}
+.switch_btns .urgent_btn{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: 1px solid black !important;
+  padding: 10px 30px !important;
+
+}
+
+.switch_btns .typical_btn{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px 30px !important;
+
+}
+.typical_btn{
+  border-right: unset !important;
+
+}
+
+/* logos style  */
+.companies_logo_main_div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  margin: 0 50px 0 50px;
+  box-shadow: 3px 1px 3px 1px gray;
+  border-radius: 20px;
+  
+}
+.companies_logo{
+  /* width: 60px !important; */
+  height: 30px;
+  /* object-fit: cover; */
+  size: 100%;
+  transition: transform 0.3s;
+}
+.companies_logo:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* checklist images  */
+.checklist_img_main_div{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.checklist_img{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+/* form style  */
+.form{
+  margin-top: 20px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+}
+.form input{
+  /* padding: 30px; */
+  border-radius: 20px;
+  border-style: unset;
+  border-style: ridge !important;
+  /* border-color: #e4852c !important; */
+  border-image: unset !important;
+}
+.input_1{
+  padding: 15px 5px 15px 5px;
+  border-radius: 20px;
+
+  width: 450PX;
+}
+.input_3{
+  padding: 20px 5px 20px 5px !important;
+  width: 100px;
+}
+.input_4{
+  padding: 20px 5px 20px 5px !important;
+}
+
+/* ================= */
+.custom-file-upload {
+  cursor: pointer;
+  margin-top: 35px;
+}
+
+
+.custom-file-upload {
+  display: inline-block;
+  background: #f1f1f1;
+  padding: 5px 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+}
+
+.custom-file-upload:hover {
+  background: #e9e9e9;
+}
+
+/* end btns  */
+
+.end_btns{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.end_btns button{
+  font-size: 18px;
+  padding: 10px 55px;
+  border-radius: 20px;
+  border-color: unset !important;
+  border-style: unset !important;
+}
+.end_btns :hover{
+  cursor: pointer;
+  color: #e4852c;
+   background-color: #ccc;
+   /* box-shadow: 4px 2px #e4852c; */
+}
+
+
+/* seadline style  */
+
+.custom-datepicker {
+  margin-top: 20px;
+  /* Customize the container style */
+  background-color: lightgray;
+  border-style: unset !important;
+  /* border-radius: 4px; */
+  padding: 10px;
+  text-align: center;
+}
+
+.custom-datepicker__input {
+
+  /* Customize the input field style */
+  width: 200px;
+  height: 32px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 14px;
+  position: relative;
+}
+
+.custom-datepicker__calendar {
+  /* transform: translateX(600px); */
+  /* Customize the calendar container style */
+  /* background-color: #fff; */
+  border-radius: 4px;
+  
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); */
+}
+
+.custom-datepicker__day {
+  /* Customize the day cell style */
+  color: white !important;
+  font-weight: bold;
+}
+.custom-datepicker__header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.custom-datepicker__prev-button{
+  background-color: #1676bb;
+  border: unset;
+  padding: 5px;
   color: white;
+  border-radius: 5px;
+  width: 60px;
+
+}
+.custom-datepicker__next-button{
+  background-color: #1676bb;
+  border: unset;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  width: 60px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ----- media queries -------- */
+
+@media (max-width: 1087px) {
+  .custom_class{
+    overflow-x: auto !important;
+    justify-content: unset !important;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 1200px) {
+ 
+  .companies_logo_main_div{
+    margin: unset !important;
+    overflow-x: auto !important;
+    justify-content: unset !important;
+    gap: 20px !important;
+    box-shadow: unset !important;
+  }
+
+  .checklist_img_main_div{
+    overflow-x: auto !important;
+    justify-content: unset !important;
+  }
+
+  .form{
+    margin-top: 20px;
+    display: block !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* overflow-x: auto !important; */
+  }
+  .input_1{
+    width: 90% !important;
+  }
+
+  
+}
+
+@media (max-width:800px){
+  .checklist_img{
+    border-radius: 50%;
+    height: 60px !important;
+    width: 60px !important;
+  }
+ 
+}
+
+@media (max-width: 550px){
+  .end_btns{
+    justify-content: unset !important;
+    /* display: none !important; */
   }
 }
